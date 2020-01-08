@@ -1,10 +1,10 @@
-package com.qinfei.dao;
+package com.qinfei.cms.dao;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 
-import com.qinfei.pojo.User;
+import com.qinfei.cms.pojo.User;
 
 public 	interface BaseDao<T> {
 

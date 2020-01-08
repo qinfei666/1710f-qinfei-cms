@@ -1,7 +1,7 @@
-package com.qinfei.dao;
+package com.qinfei.cms.dao;
 
 
-import com.qinfei.pojo.Link;
+import com.qinfei.cms.pojo.Link;
 
 public interface LinkDao extends BaseDao<Link>{
 

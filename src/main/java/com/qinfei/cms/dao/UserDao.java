@@ -1,7 +1,7 @@
-package com.qinfei.dao;
+package com.qinfei.cms.dao;
 
 
-import com.qinfei.pojo.User;
+import com.qinfei.cms.pojo.User;
 
 public interface UserDao extends BaseDao<User>{
 

@@ -1,7 +1,7 @@
-package com.qinfei.dao;
+package com.qinfei.cms.dao;
 
 
-import com.qinfei.pojo.Comment;
+import com.qinfei.cms.pojo.Comment;
 
 public interface CommentDao extends BaseDao<Comment>{
 

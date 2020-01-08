@@ -1,4 +1,4 @@
-package com.qinfei.service;
+package com.qinfei.cms.service;
 
 public interface UserService {
 

@@ -1,8 +1,8 @@
-package com.qinfei.dao;
+package com.qinfei.cms.dao;
 
 
 
-import com.qinfei.pojo.Article;
+import com.qinfei.cms.pojo.Article;
 
 public interface ArticleDao extends BaseDao<Article>{
 

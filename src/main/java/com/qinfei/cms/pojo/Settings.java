@@ -1,4 +1,4 @@
-package com.qinfei.pojo;
+package com.qinfei.cms.pojo;
 
 public class Settings {
 

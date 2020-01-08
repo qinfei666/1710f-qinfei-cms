@@ -2,14 +2,14 @@
 <!DOCTYPE mapper
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.qinfei.dao.LinkDao">
+<mapper namespace="com.qinfei.cms.dao.LinkDao">
 
-	<select id="select" resultType="com.qinfei.pojo.Link">
+	<select id="select" resultType="com.qinfei.cms.pojo.Link">
 		SELECT * FROM cms_link
 
 	</select>
 
-	<select id="selectById" resultType="com.qinfei.pojo.Link">
+	<select id="selectById" resultType="com.qinfei.cms.pojo.Link">
 		SELECT * FROM cms_link WHERE id=#{id}
 
 

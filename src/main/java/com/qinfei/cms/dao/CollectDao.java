@@ -1,7 +1,7 @@
-package com.qinfei.dao;
+package com.qinfei.cms.dao;
 
 
-import com.qinfei.pojo.Collect;
+import com.qinfei.cms.pojo.Collect;
 
 public interface CollectDao extends BaseDao<Collect>{
 

@@ -7,7 +7,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 <!-- 别名配置 -->
  <typeAliases>
     <!-- todo -->
-   <package name="com.qinfei.pojo"/>
+   <package name="com.qinfei.cms.pojo"/>
  </typeAliases>
  
  

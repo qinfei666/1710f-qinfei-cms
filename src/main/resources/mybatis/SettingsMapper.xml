@@ -2,15 +2,15 @@
 <!DOCTYPE mapper
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.qinfei.dao.SettingsDao">
+<mapper namespace="com.qinfei.cms.dao.SettingsDao">
 
-	<select id="select" resultType="com.qinfei.pojo.Settings">
+	<select id="select" resultType="com.qinfei.cms.pojo.Settings">
 		SELECT * FROM cms_settings
 
 
 	</select>
 
-	<select id="selectById" resultType="com.qinfei.pojo.Settings">
+	<select id="selectById" resultType="com.qinfei.cms.pojo.Settings">
 		SELECT * FROM cms_settings WHERE id=#{id}
 
 

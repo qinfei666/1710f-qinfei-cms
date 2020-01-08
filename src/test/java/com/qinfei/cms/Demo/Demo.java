@@ -1,4 +1,4 @@
-package com.qinfei.Demo;
+package com.qinfei.cms.Demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.qinfei.dao.UserDao;
-import com.qinfei.pojo.User;
+import com.qinfei.cms.dao.UserDao;
+import com.qinfei.cms.pojo.User;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations="classpath:spring-beans.xml")
 public class Demo {
