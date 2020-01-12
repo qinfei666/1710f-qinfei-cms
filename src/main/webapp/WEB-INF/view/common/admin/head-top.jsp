@@ -18,7 +18,7 @@
 		<li class="nav-item"><a class="nav-link" href="/admin/">登录</a></li>
 		</c:if>
 		<c:if test="${userAdminInfo!=null }">
-		<li class="nav-item"><a class="nav-link" href="/admin/是">退出</a></li>
+		<li class="nav-item"><a class="nav-link" href="/admin/signOut">退出</a></li>
 		</c:if>
 	</ul>
 </div>

@@ -1,45 +1,70 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>杨元庆回应常程离职：联想不会放弃中国手机市场，会寻找时机</title>
 <link href="/public/css/bootstrap.min.css" rel="stylesheet">
 <link href="/public/css/index.css" rel="stylesheet">
-<script type="text/javascript" src="/resource/bootstrap-4.3.1/dist/js/bootstrap.js"></script>
 </head>
 <body>
-
-		<nav class="nav fixed-top justify-content-center" style="background:#2FFFFF;height:50px " > 欢迎登录 </nav>
-	<div class="container-fulid" style="margin-top:80px;height:600px">
-		 <div class="container" >
-		 <div class="row">
-		 	${error }
-		 </div>
-		 	<div class="row">
-		 		<div class="col-md-6 offset-3" style="background:url(/resource/images/login_backup.jpg);">
-		 			<form modelAttribute="user" max="8" min="2" id="form" action="" method="post" >
-						  <div class="form-group">
-						    <label >用户名</label>
-						    <input name="username"  class="form-control" 
-						     aria-describedby="emailHelp" remote="/user/checkname" />
-						  </div>
-						  
-						  <div class="form-group">
-						    <label>密码</label>
-						    <input  type="password" name="password" class="form-control"  />
-						  </div>
-						  <button type="submit" class="btn btn-primary">登录</button>
-						  <a href="register"> <font color="#FF0033">没有账号，点击这里直接去注册</font> </a>
-						</form>
-						
-		 		</div>
-		 	</div>
-		 </div>
-	</div>
-	<nav class="nav fixed-bottom justify-content-center"  style="background:#2FFFFF;height:50px "  > cms 网站 </nav>
+	<!-- 头部导航 -->
+	<jsp:include page="../common/user/head-top.jsp"></jsp:include>
 	
+	<div class="container-fluid" style="margin-top: 6px;">
+		<div class="row offset-4" style="margin-top: 180px;">
+			<div class="col-5">
+				<h1>欢迎回来</h1>
+				<div class="alert alert-success" role="alert" style="display: none"></div>
+				<form id="loginForm">
+					<div class="form-group">
+						<input type="email" class="form-control" id="username" name="username"	placeholder="请输入用户名" >
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="请输入密码"  id="password" name="password">
+					</div>
+					<div class="form-group form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">记住登录状态</label>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<button type="button" class="btn btn-primary" onclick="login();">登录</button>
+						</div>
+						<div class="col-8">
+							<small id="emailHelp" class="form-text text-muted">没有帐号，去<a
+								href="/user/register">注册</a></small>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="/public/js/jquery.min.1.12.4.js"></script>
+	<script src="/public/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function login(){
+			var username = $("#username").val();
+			var password = $("#password").val();
+			console.log(username)
+			if(username==null || username=="" || password==null || password==""){
+				$(".alert").html("用户名和密码不能为空");
+				$(".alert").show();
+				return;
+			}
+			
+			$(".alert").hide();
+			$.post("/user/login",$("#loginForm").serialize(),function(res){
+				if(res.result){
+					location.href = "/";
+				}else{
+					$(".alert").html(res.message);
+					$(".alert").show();
+				}
+			})
+		}
+	
+	</script>
 </body>
 </html>
