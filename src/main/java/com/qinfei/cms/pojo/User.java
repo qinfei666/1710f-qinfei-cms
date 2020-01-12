@@ -1,24 +1,53 @@
 package com.qinfei.cms.pojo;
 
+import java.util.Date;
+
 public class User {
 
-	private String id              ;
-	private String username        ;
-	private String headimg         ;
-	private String password        ;
-	private String nickname        ;
-	private String birthday        ;
-	private String gender          ;
-	private String locked          ;
-	private String score           ;
-	private String role            ;
-	private String url             ;
-	private String create_time     ;
-	private String update_time     ;
-	public String getId() {
+/** ----------------扩展属性----------------- **/
+	
+	/** 扩展属性 **/
+	private String rePassword;
+	
+	/** ----------------数据字段----------------- **/
+	/**  **/
+	private Integer id;
+	/** 登录名称 **/
+	private String username;
+	/** 用户头像 **/
+	private String headimg;
+	/** 登录密码 **/
+	private String password;
+	/** 昵称 **/
+	private String nickname;
+	/** 生日 **/
+	private Date birthday;
+	/** 性别，1：男；2：女 **/
+	private Integer gender;
+	/** 0:正常,1:禁用 **/
+	private Integer locked;
+	/** 积分 **/
+	private Integer score;
+	/** 0:普通用户,1:管理员 **/
+	private String role;
+	/** 个人博客网址 **/
+	private String url;
+	/** 创建时间 **/
+	private Date create_time;
+	/** 修改时间 **/
+	private Date update_time;
+	
+	
+	public String getRePassword() {
+		return rePassword;
+	}
+	public void setRePassword(String rePassword) {
+		this.rePassword = rePassword;
+	}
+	public Integer getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public String getUsername() {
@@ -45,28 +74,28 @@ public class User {
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
 	}
-	public String getBirthday() {
+	public Date getBirthday() {
 		return birthday;
 	}
-	public void setBirthday(String birthday) {
+	public void setBirthday(Date birthday) {
 		this.birthday = birthday;
 	}
-	public String getGender() {
+	public Integer getGender() {
 		return gender;
 	}
-	public void setGender(String gender) {
+	public void setGender(Integer gender) {
 		this.gender = gender;
 	}
-	public String getLocked() {
+	public Integer getLocked() {
 		return locked;
 	}
-	public void setLocked(String locked) {
+	public void setLocked(Integer locked) {
 		this.locked = locked;
 	}
-	public String getScore() {
+	public Integer getScore() {
 		return score;
 	}
-	public void setScore(String score) {
+	public void setScore(Integer score) {
 		this.score = score;
 	}
 	public String getRole() {
@@ -81,57 +110,28 @@ public class User {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-	public String getCreate_time() {
+	
+	public Date getCreate_time() {
 		return create_time;
 	}
-	public void setCreate_time(String create_time) {
+	public void setCreate_time(Date create_time) {
 		this.create_time = create_time;
 	}
-	public String getUpdate_time() {
+	public Date getUpdate_time() {
 		return update_time;
 	}
-	public void setUpdate_time(String update_time) {
+	public void setUpdate_time(Date update_time) {
 		this.update_time = update_time;
 	}
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", headimg="
-				+ headimg + ", password=" + password + ", nickname=" + nickname
-				+ ", birthday=" + birthday + ", gender=" + gender + ", locked="
-				+ locked + ", score=" + score + ", role=" + role + ", url="
-				+ url + ", create_time=" + create_time + ", update_time="
-				+ update_time + "]";
+		return "User [id=" + id + ", username=" + username + ", headimg=" + headimg + ", password=" + password
+				+ ", nickname=" + nickname + ", birthday=" + birthday + ", gender=" + gender + ", locked=" + locked
+				+ ", score=" + score + ", role=" + role + ", url=" + url + ", create_time=" + create_time
+				+ ", update_time=" + update_time + "]";
 	}
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		result = prime * result
-				+ ((username == null) ? 0 : username.hashCode());
-		return result;
-	}
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		User other = (User) obj;
-		if (id == null) {
-			if (other.id != null)
-				return false;
-		} else if (!id.equals(other.id))
-			return false;
-		if (username == null) {
-			if (other.username != null)
-				return false;
-		} else if (!username.equals(other.username))
-			return false;
-		return true;
-	}
+	
+
 	
 	
 }

@@ -4,11 +4,16 @@ import java.util.Date;
 
 public class Collect {
 
-	private Integer id         ;
-	private String text       ;
-	private String url        ;
-	private Date created    ;
-	private Integer user_id    ;
+	/**  **/
+	private Integer id;
+	/**  **/
+	private String text;
+	/**  **/
+	private String url;
+	/**  **/
+	private Date created;
+	/**  **/
+	private Integer user_id;
 	public Integer getId() {
 		return id;
 	}
@@ -27,6 +32,7 @@ public class Collect {
 	public void setUrl(String url) {
 		this.url = url;
 	}
+	
 	public Date getCreated() {
 		return created;
 	}
@@ -38,6 +44,11 @@ public class Collect {
 	}
 	public void setUser_id(Integer user_id) {
 		this.user_id = user_id;
+	}
+	@Override
+	public String toString() {
+		return "Collect [id=" + id + ", text=" + text + ", url=" + url + ", created=" + created + ", user_id=" + user_id
+				+ "]";
 	}
 	
 	

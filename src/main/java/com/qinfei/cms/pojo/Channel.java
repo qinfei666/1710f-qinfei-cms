@@ -2,10 +2,15 @@ package com.qinfei.cms.pojo;
 
 public class Channel {
 
+	/**  **/
 	private Integer id;
+	/** 名称 **/
 	private String name;
+	/** 描述 **/
 	private String description;
+	/** 图标 **/
 	private String icon;
+	/** 排序 **/
 	private Integer sorted;
 	public Integer getId() {
 		return id;
@@ -36,6 +41,11 @@ public class Channel {
 	}
 	public void setSorted(Integer sorted) {
 		this.sorted = sorted;
+	}
+	@Override
+	public String toString() {
+		return "Channel [id=" + id + ", name=" + name + ", description=" + description + ", icon=" + icon + ", sorted="
+				+ sorted + "]";
 	}
 	
 

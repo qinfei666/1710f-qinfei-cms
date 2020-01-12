@@ -2,8 +2,11 @@ package com.qinfei.cms.pojo;
 
 public class VoteContent {
 
+	/**  **/
 	private Integer id;
+	/** 标题 **/
 	private String title;
+	/** 内容 **/
 	private String content;
 	public Integer getId() {
 		return id;
@@ -22,6 +25,10 @@ public class VoteContent {
 	}
 	public void setContent(String content) {
 		this.content = content;
+	}
+	@Override
+	public String toString() {
+		return "Vote_content [id=" + id + ", title=" + title + ", content=" + content + "]";
 	}
 	
 

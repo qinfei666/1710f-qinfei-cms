@@ -2,7 +2,9 @@ package com.qinfei.cms.pojo;
 
 public class Tag {
 
+	/**  **/
 	private Integer id;
+	/** 标签名称 **/
 	private String tagname;
 	public Integer getId() {
 		return id;
@@ -15,5 +17,9 @@ public class Tag {
 	}
 	public void setTagname(String tagname) {
 		this.tagname = tagname;
+	}
+	@Override
+	public String toString() {
+		return "Tag [id=" + id + ", tagname=" + tagname + "]";
 	}
 }

@@ -2,10 +2,14 @@ package com.qinfei.cms.pojo;
 
 public class Slide {
 
-	private Integer id     ;
-	private String title  ;
+	/**  **/
+	private Integer id;
+	/** 标题 **/
+	private String title;
+	/** 图片地址 **/
 	private String picture;
-	private String url    ;
+	/** 链接url **/
+	private String url;
 	public Integer getId() {
 		return id;
 	}
@@ -30,6 +34,10 @@ public class Slide {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-	
+	@Override
+	public String toString() {
+		return "Slide [id=" + id + ", title=" + title + ", picture=" + picture + ", url=" + url + "]";
+	}
+
 
 }

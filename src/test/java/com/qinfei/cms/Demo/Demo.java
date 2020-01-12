@@ -57,7 +57,7 @@ public class Demo {
 		@Test
 		public void UserUpdate(){
 			User user = new User();
-			user.setId("201");
+			user.setId(201);
 			user.setUsername("qinfei666");
 			user.setPassword("qwe123123");
 			userDao.update(user);

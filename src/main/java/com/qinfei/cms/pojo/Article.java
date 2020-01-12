@@ -4,21 +4,54 @@ import java.util.Date;
 
 public class Article {
 
+	/** 所属栏目 **/
+	private String channel_name;
+	/** 所属分类 **/
+	private String category_name;
+	/** 用户昵称 **/
+	private String nickname;
+	
+	private String statusStr;
+	
+	
+	/**  **/
 	private Integer id;
-	private String title       ;
-	private String content     ;
-	private String picture     ;
-	private Integer channel_id  ;
-	private Integer category_id ;
-	private Integer user_id     ;
-	private Integer hits        ;
-	private Integer hot         ;
-	private Integer status      ;
-	private Integer deleted     ;
-	private Date created     ;
-	private Date updated     ;
-	private Integer commentCnt  ;
-	private Integer tousuCnt    ;
+	/** 标题 **/
+	private String title;
+	/** 文章内容 **/
+	private String content;
+	/** 标题图片 **/
+	private String picture;
+	/** 所属栏目 **/
+	private Integer channel_id;
+	/** 所属分类 **/
+	private Integer category_id;
+	/** 用户Id **/
+	private Integer user_id;
+	/** 点击次数 **/
+	private Integer hits;
+	/** 是否热门 **/
+	private Integer hot;
+	/** 0：刚发布；2：草稿；1审核通过；-1 审核未通过;3:禁用 **/
+	private Integer status;
+	/** 0:正常,1:删除 **/
+	private Integer deleted;
+	/** 发布时间 **/
+	private Date created;
+	/** 更新时间 **/
+	private Date updated;
+	/** 评论数量 **/
+	private Integer commentCnt;
+	/** 投诉次数 **/
+	private Integer tousuCnt;
+	
+	
+	public String getNickname() {
+		return nickname;
+	}
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
 	public Integer getId() {
 		return id;
 	}
@@ -28,8 +61,26 @@ public class Article {
 	public String getTitle() {
 		return title;
 	}
+	public String getStatusStr() {
+		return statusStr;
+	}
+	public void setStatusStr(String statusStr) {
+		this.statusStr = statusStr;
+	}
 	public void setTitle(String title) {
 		this.title = title;
+	}
+	public String getChannel_name() {
+		return channel_name;
+	}
+	public void setChannel_name(String channel_name) {
+		this.channel_name = channel_name;
+	}
+	public String getCategory_name() {
+		return category_name;
+	}
+	public void setCategory_name(String category_name) {
+		this.category_name = category_name;
 	}
 	public String getContent() {
 		return content;
@@ -85,6 +136,7 @@ public class Article {
 	public void setDeleted(Integer deleted) {
 		this.deleted = deleted;
 	}
+	
 	public Date getCreated() {
 		return created;
 	}
@@ -109,7 +161,13 @@ public class Article {
 	public void setTousuCnt(Integer tousuCnt) {
 		this.tousuCnt = tousuCnt;
 	}
-	
+	@Override
+	public String toString() {
+		return "Article [id=" + id + ", title=" + title + ", content=" + content + ", picture=" + picture
+				+ ", channel_id=" + channel_id + ", category_id=" + category_id + ", user_id=" + user_id + ", hits="
+				+ hits + ", hot=" + hot + ", status=" + status + ", deleted=" + deleted + ", created=" + created
+				+ ", updated=" + updated + ", commentCnt=" + commentCnt + ", tousuCnt=" + tousuCnt + "]";
+	}
 	
 
 }
