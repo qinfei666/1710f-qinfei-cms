@@ -8,6 +8,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.qinfei.cms.dao.UserDao;
 import com.qinfei.cms.pojo.User;
+import com.qinfei.common.utils.FileUtil;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations="classpath:spring-beans.xml")
 public class Demo {
@@ -63,5 +64,6 @@ public class Demo {
 			userDao.update(user);
 			
 		}
+		
 	
 }

@@ -36,52 +36,16 @@
 				</div>
 			</div>
 			
-			<div class="col-3">
+			<div class="col-3" style="margin-left: 50px;">
 				<div class="right">
-					<div>相关文章</div>
+					<div>热门推荐</div>
 					<ul class="list-unstyled">
-						<li class="media"><img
-							src="http://p1.pstatp.com/large/pgc-image/4ab237b9682f4c0286da5c5e6823dc87"
-							style="height: 72px; width: 72px;" class="mr-3" alt="...">
+						<li class="media">
+						<img src="http://p1.pstatp.com/large/pgc-image/4ab237b9682f4c0286da5c5e6823dc87" style="height: 72px; width: 72px;" class="mr-3" alt="...">
 							<div class="media-body">
 								<h5 class="mt-0 mb-1">电子眼全面升级，新增5项功能！</h5>
-							</div></li>
-						<li class="media"><img
-							src="http://p1.pstatp.com/large/pgc-image/4ab237b9682f4c0286da5c5e6823dc87"
-							style="height: 72px; width: 72px;" class="mr-3" alt="...">
-							<div class="media-body">
-								<h5 class="mt-0 mb-1">电子眼全面升级，新增5项功能！</h5>
-							</div></li>
-						<li class="media"><img
-							src="http://p1.pstatp.com/large/pgc-image/4ab237b9682f4c0286da5c5e6823dc87"
-							style="height: 72px; width: 72px;" class="mr-3" alt="...">
-							<div class="media-body">
-								<h5 class="mt-0 mb-1">电子眼全面升级，新增5项功能！</h5>
-							</div></li>
-						<li class="media"><img
-							src="http://p1.pstatp.com/large/pgc-image/4ab237b9682f4c0286da5c5e6823dc87"
-							style="height: 72px; width: 72px;" class="mr-3" alt="...">
-							<div class="media-body">
-								<h5 class="mt-0 mb-1">电子眼全面升级，新增5项功能！</h5>
-							</div></li>
-						<li class="media"><img
-							src="http://p1.pstatp.com/large/pgc-image/4ab237b9682f4c0286da5c5e6823dc87"
-							style="height: 72px; width: 72px;" class="mr-3" alt="...">
-							<div class="media-body">
-								<h5 class="mt-0 mb-1">电子眼全面升级，新增5项功能！</h5>
-							</div></li>
-						<li class="media"><img
-							src="http://p1.pstatp.com/large/pgc-image/4ab237b9682f4c0286da5c5e6823dc87"
-							style="height: 72px; width: 72px;" class="mr-3" alt="...">
-							<div class="media-body">
-								<h5 class="mt-0 mb-1">电子眼全面升级，新增5项功能！</h5>
-							</div></li>
-						<li class="media"><img
-							src="http://p1.pstatp.com/large/pgc-image/4ab237b9682f4c0286da5c5e6823dc87"
-							style="height: 72px; width: 72px;" class="mr-3" alt="...">
-							<div class="media-body">
-								<h5 class="mt-0 mb-1">电子眼全面升级，新增5项功能！</h5>
-							</div></li>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -90,5 +54,11 @@
 	</div>
 	<script src="/public/js/jquery.min.1.12.4.js"></script>
 	<script src="/public/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			
+		})
+	
+	</script>
 </body>
 </html>
